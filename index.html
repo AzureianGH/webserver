@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+document.body.style.backgroundColor = '#0a5ec6';
+
+var topBar = document.createElement('div');
+topBar.style.position = 'fixed';
+topBar.style.top = '0px';
+topBar.style.left = '0px';
+topBar.style.width = '100%';
+topBar.style.height = '50px';
+topBar.style.backgroundColor = '#333';
+document.body.appendChild(topBar);
+
+var aboutButton = document.createElement('div');
+aboutButton.style.position = 'fixed';
+aboutButton.style.top = '0px';
+aboutButton.style.left = '0px';
+aboutButton.style.width = '100px';
+aboutButton.style.height = '50px';
+aboutButton.style.backgroundColor = '#333';
+aboutButton.style.color = '#fff';
+aboutButton.style.textAlign = 'center';
+aboutButton.style.lineHeight = '50px';
+aboutButton.innerHTML = 'About';
+document.body.appendChild(aboutButton);
+
+aboutButton.style.cursor = 'pointer';
+
+aboutButton.onmouseover = function() {
+  aboutButton.style.backgroundColor = '#444';
+};
+aboutButton.onmouseout = function() {
+  aboutButton.style.backgroundColor = '#333';
+};
+
+var projectsButton = document.createElement('div');
+projectsButton.style.position = 'fixed';
+projectsButton.style.top = '0px';
+projectsButton.style.left = '100px';
+projectsButton.style.width = '100px';
+projectsButton.style.height = '50px';
+projectsButton.style.backgroundColor = '#333';
+projectsButton.style.color = '#fff';
+projectsButton.style.textAlign = 'center';
+projectsButton.style.lineHeight = '50px';
+projectsButton.innerHTML = 'Projects';
+document.body.appendChild(projectsButton);
+
+projectsButton.style.cursor = 'pointer';
+projectsButton.onmouseover = function() {
+  projectsButton.style.backgroundColor = '#444';
+};
+projectsButton.onmouseout = function() {
+  projectsButton.style.backgroundColor = '#333';
+};
+
+document.body.style.fontFamily = 'arial';
+
+var consoleButton = document.createElement('div');
+consoleButton.style.position = 'fixed';
+consoleButton.style.top = '0px';
+consoleButton.style.left = '200px';
+consoleButton.style.width = '100px';
+consoleButton.style.height = '50px';
+consoleButton.style.backgroundColor = '#333';
+consoleButton.style.color = '#fff';
+consoleButton.style.textAlign = 'center';
+consoleButton.style.lineHeight = '50px';
+consoleButton.innerHTML = 'Console';
+document.body.appendChild(consoleButton);
+/* make it a button and when highlighted turn dark gray */
+consoleButton.style.cursor = 'pointer';
+consoleButton.onmouseover = function() {
+  consoleButton.style.backgroundColor = '#444';
+};
+consoleButton.onmouseout = function() {
+  consoleButton.style.backgroundColor = '#333';
+};
+
+var logo = document.createElement('img');
+logo.src = 'logo.png';
+logo.style.position = 'fixed';
+logo.style.top = '0px';
+logo.style.right = '0px';
+logo.style.width = '50px';
+logo.style.height = '50px';
+document.body.appendChild(logo);
+
+var homeButton = document.createElement('div');
+homeButton.style.position = 'fixed';
+homeButton.style.top = '0px';
+homeButton.style.left = '300px';
+homeButton.style.width = '100px';
+homeButton.style.height = '50px';
+homeButton.style.backgroundColor = '#333';
+homeButton.style.color = '#fff';
+homeButton.style.textAlign = 'center';
+homeButton.style.lineHeight = '50px';
+homeButton.innerHTML = 'Home';
+document.body.appendChild(homeButton);
+/* make it a button and when highlighted turn dark gray */
+homeButton.style.cursor = 'pointer';
+homeButton.onmouseover = function() {
+  homeButton.style.backgroundColor = '#444';
+};
+homeButton.onmouseout = function() {
+  homeButton.style.backgroundColor = '#333';
+};
+
+var highlight = document.createElement('div');
+highlight.style.position = 'fixed';
+highlight.style.top = '40px';
+highlight.style.left = '325px';
+highlight.style.width = '50px';
+highlight.style.height = '2px';
+highlight.style.backgroundColor = '#fff';
+highlight.style.borderRadius = '25px';
+document.body.appendChild(highlight);
+
+aboutButton.onclick = function() {
+  window.location.href = 'about.html';
+};
+projectsButton.onclick = function() {
+  window.location.href = 'projects.html';
+};
+consoleButton.onclick = function() {
+  window.location.href = 'console.html';
+};
+homeButton.onclick = function() {
+  window.location.href = 'index.html';
+};
+});
+        </script>
+    </head>
+</html>
